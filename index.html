@@ -6,6 +6,7 @@
     <title>JobRinger</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google fonts CDN -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -17,20 +18,15 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Font Awesome CDN for icons -->
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
     <style>
       .font-roboto {
         font-family: "Roboto", sans-serif;
       }
     </style>
   </head>
-  <body class="font-roboto mb-20">
-    <header>
-      <nav class="shadow-xl">
+  <body class="font-roboto">
+    <header class="">
+      <nav class="fixed top-0 left-0 w-full bg-white shadow-xl z-50">
         <div
           class="flex flex-row md:flex justify-between items-center bg-base-100 shadow-sm px-5 py-2"
         >
@@ -101,7 +97,7 @@
         </div>
       </nav>
       <section
-        class="flex-row md:flex mt-6 justify-between items-center bg-linear-to-r from-[#26D6D9] to-[#001E86] mx-4 px-6 py-4 rounded-lg"
+        class="flex-row md:flex mt-20 md:mt-28 justify-between items-center bg-linear-to-r from-[#26D6D9] to-[#001E86] mx-4 px-6 py-4 rounded-lg"
       >
         <div>
           <h2 class="font-bold text-xl md:text-3xl text-white uppercase">
@@ -610,6 +606,16 @@
         <p class="border border-gray-700"></p>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="bg-[#E8F5F5] pt-2 text-center space-y-2 pb-5 px-10">
+        <p class="">
+          Terms and conditions | Privacy Policy | Refund / Cancellation Policy
+          |About Us | Contact Us | FAQ | Blogs
+        </p>
+        <p class="pb-2">
+          © All Rights Reserved @ 2025 Jobtech Ventures Private Limited.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
