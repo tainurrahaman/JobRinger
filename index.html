@@ -26,11 +26,11 @@
   </head>
   <body class="font-roboto">
     <header>
-      <nav>
-        <div class="navbar bg-base-100 shadow-sm">
-          <div class="navbar-start">
+      <nav class="shadow-xl">
+        <div class="flex flex-row md:flex justify-between items-center bg-base-100 shadow-sm px-5 py-2">
+          <div class="flex justify-between">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -54,6 +54,11 @@
                 <li><a>Active Employers</a></li>
                 <li><a>Job Vlogs</a></li>
                 <li><a>Pricing</a></li>
+                <a class="btn bg-white hover:bg-[#FFD52C] ml-3">Jobseeker Login</a>
+            <a
+              class="btn bg-[#FFD52C] hover:bg-slate-700 hover:text-white ml-3 border-none"
+              >Employer Login</a
+            >
               </ul>
             </div>
             <img
@@ -62,31 +67,40 @@
               class="w-28 md:w-52"
             />
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <!-- <ul class="menu menu-horizontal px-1">
-              <li><a>Jobs</a></li>
-              <li><a>Active Employers</a></li>
-              <li><a>Job Vlogs</a></li>
-              <li><a>Pricing</a></li>
-            </ul> -->
-          </div>
-          <div class="navbar-end">
-            <div class="hidden lg:flex">
+          <div class="">
+            <div class="hidden md:flex">
               <ul class="menu menu-horizontal px-1 font-semibold">
                 <li><a>Jobs</a></li>
                 <li><a>Active Employers</a></li>
                 <li><a>Job Vlogs</a></li>
                 <li><a>Pricing</a></li>
+                <a class="btn bg-white hover:bg-[#FFD52C] ml-3">Jobseeker Login</a>
+                <a
+              class="btn bg-[#FFD52C] hover:bg-slate-700 hover:text-white ml-3 border-none"
+              >Employer Login</a>
               </ul>
             </div>
-            <a class="btn bg-white hover:bg-[#FFD52C]">Jobseeker Login</a>
-            <a
-              class="btn bg-[#FFD52C] hover:bg-slate-700 hover:text-white ml-3 border-none"
-              >Employer Login</a
-            >
+           <div class=" md:hidden font-bold bg-linear-to-r from-[#26D6D9] to-[#001E86] bg-clip-text text-transparent">
+            <p class="text-center">11000+</p>
+            <p> Active Jobs </p>
+           </div>
           </div>
         </div>
       </nav>
+      <section class="flex-row md:flex mt-6 justify-between items-center bg-linear-to-r from-[#26D6D9] to-[#001E86] mx-4 px-6 py-4 rounded-lg">
+        <div>
+            <h2 class="font-bold text-xl md:text-3xl text-white uppercase">Employers</h2>
+        </div>
+        <div>
+            <h4 class="font-bold text-xl bg-linear-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent hidden lg:flex">WELCOME OFFER - FREE JOB Postings and Much More.</h4>
+        </div>
+        <div class="flex items-center mt-2 md:mt-0">
+            <a class="btn text-black border-none bg-[#FFD52C] ml-0 md:ml-3 hover:text-white px-2">Register for free</a>
+            <a class="btn ml-3 border-none px-2"
+              >Post a job</a> 
+            <p class="ml-3 text-white text-sm underline underline-offset-1 hover:text-blue-600">Sales Enquiry</p>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
