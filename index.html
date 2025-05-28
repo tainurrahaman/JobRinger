@@ -17,7 +17,11 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    </style>
+    <!-- Font Awesome CDN for icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       .font-roboto {
         font-family: "Roboto", sans-serif;
@@ -27,7 +31,9 @@
   <body class="font-roboto mb-20">
     <header>
       <nav class="shadow-xl">
-        <div class="flex flex-row md:flex justify-between items-center bg-base-100 shadow-sm px-5 py-2">
+        <div
+          class="flex flex-row md:flex justify-between items-center bg-base-100 shadow-sm px-5 py-2"
+        >
           <div class="flex justify-between">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
@@ -54,11 +60,13 @@
                 <li><a>Active Employers</a></li>
                 <li><a>Job Vlogs</a></li>
                 <li><a>Pricing</a></li>
-                <a class="btn bg-white hover:bg-[#FFD52C] ml-3">Jobseeker Login</a>
-            <a
-              class="btn bg-[#FFD52C] hover:bg-slate-700 hover:text-white ml-3 border-none"
-              >Employer Login</a
-            >
+                <a class="btn bg-white hover:bg-[#FFD52C] ml-3"
+                  >Jobseeker Login</a
+                >
+                <a
+                  class="btn bg-[#FFD52C] hover:bg-slate-700 hover:text-white ml-3 border-none"
+                  >Employer Login</a
+                >
               </ul>
             </div>
             <img
@@ -74,237 +82,533 @@
                 <li><a>Active Employers</a></li>
                 <li><a>Job Vlogs</a></li>
                 <li><a>Pricing</a></li>
-                <a class="btn bg-white hover:bg-[#FFD52C] ml-3">Jobseeker Login</a>
+                <a class="btn bg-white hover:bg-[#FFD52C] ml-3"
+                  >Jobseeker Login</a
+                >
                 <a
-              class="btn bg-[#FFD52C] hover:bg-slate-700 hover:text-white ml-3 border-none"
-              >Employer Login</a>
+                  class="btn bg-[#FFD52C] hover:bg-slate-700 hover:text-white ml-3 border-none"
+                  >Employer Login</a
+                >
               </ul>
             </div>
-           <div class=" md:hidden font-bold bg-linear-to-r from-[#26D6D9] to-[#001E86] bg-clip-text text-transparent">
-            <p class="text-center">11000+</p>
-            <p> Active Jobs </p>
-           </div>
+            <div
+              class="md:hidden font-bold bg-linear-to-r from-[#26D6D9] to-[#001E86] bg-clip-text text-transparent"
+            >
+              <p class="text-center">11000+</p>
+              <p>Active Jobs</p>
+            </div>
           </div>
         </div>
       </nav>
-      <section class="flex-row md:flex mt-6 justify-between items-center bg-linear-to-r from-[#26D6D9] to-[#001E86] mx-4 px-6 py-4 rounded-lg">
+      <section
+        class="flex-row md:flex mt-6 justify-between items-center bg-linear-to-r from-[#26D6D9] to-[#001E86] mx-4 px-6 py-4 rounded-lg"
+      >
         <div>
-            <h2 class="font-bold text-xl md:text-3xl text-white uppercase">Employers</h2>
+          <h2 class="font-bold text-xl md:text-3xl text-white uppercase">
+            Employers
+          </h2>
         </div>
         <div>
-            <h4 class="font-bold text-xl bg-linear-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent hidden lg:flex">WELCOME OFFER - FREE JOB Postings and Much More.</h4>
+          <h4
+            class="font-bold text-xl bg-linear-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent hidden lg:flex"
+          >
+            WELCOME OFFER - FREE JOB Postings and Much More.
+          </h4>
         </div>
         <div class="flex items-center mt-2 md:mt-0">
-            <a class="btn text-black border-none bg-[#FFD52C] ml-0 md:ml-3 hover:text-white px-2">Register for free</a>
-            <a class="btn ml-3 border-none px-2"
-              >Post a job</a> 
-            <p class="ml-3 text-white text-sm underline underline-offset-1 hover:text-blue-600">Sales Enquiry</p>
+          <a
+            class="btn text-black border-none bg-[#FFD52C] ml-0 md:ml-3 hover:text-white px-2"
+            >Register for free</a
+          >
+          <a class="btn ml-3 border-none px-2">Post a job</a>
+          <p
+            class="ml-3 text-white text-sm underline underline-offset-1 hover:text-blue-600"
+          >
+            Sales Enquiry
+          </p>
         </div>
       </section>
     </header>
     <main>
-        <!-- Job Search Section -->
-        <section>
-            <div class="text-center mt-4 mb-2">
-                <h2 class="text-[#001E86] font-bold text-xl md:text-2xl uppercase">Bringing you the Perfect Job !</h2>
-                <p class="font-semibold text-lg text-[#051A9F]">11,000+ Jobs to Apply</p>
+      <!-- Job Search Section -->
+      <section>
+        <div class="text-center mt-4 mb-2">
+          <h2 class="text-[#001E86] font-bold text-xl md:text-2xl uppercase">
+            Bringing you the Perfect Job !
+          </h2>
+          <p class="font-semibold text-lg text-[#051A9F]">
+            11,000+ Jobs to Apply
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 bg-white p-4">
+          <div class="bg-[#7AD5D5] rounded-lg p-4 flex-1">
+            <div class="flex flex-row items-center gap-2">
+              <input
+                type="text"
+                placeholder="Search Jobs Now"
+                class="flex-1 px-4 py-2 rounded border border-gray-300 bg-white"
+              />
+              <button
+                class="bg-yellow-400 text-black font-semibold px-4 py-2 rounded"
+              >
+                Search
+              </button>
             </div>
-            <div  class="flex flex-col md:flex-row gap-4 bg-white p-4">
-                <div class="bg-[#7AD5D5] rounded-lg p-4 flex-1">
-                    <div class="flex flex-row items-center gap-2">
-                      <input
-                        type="text"
-                        placeholder="Search Jobs Now"
-                        class="flex-1 px-4 py-2 rounded border border-gray-300 bg-white"
-                      />
-                      <button class="bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
-                        Search
-                      </button>
-                    </div>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                      <button class="bg-white text-black font-bold px-4 py-2 rounded shadow">
-                        View Jobs
-                      </button>
-                      <button class="bg-yellow-400 text-black font-bold px-4 py-2 rounded shadow hover:text-white">
-                        Register For FREE
-                      </button>
-                    </div>
-                  </div>
-                  <div class="bg-[#7AD5D5] rounded-lg p-4 flex-1">
-                    <h2 class="text-xl font-bold text-[#001155] mb-2 flex items-center justify-center gap-1">
-                      Quick Job Search
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </h2>
-                    <div class="flex flex-wrap gap-2 text-sm text-[#0073AE] font-medium">
-                      <span>#Fresher</span>
-                      <span>#Work From Home</span>
-                      <span>#WFH</span>
-                      <span>#IT</span>
-                      <span>#HR</span>
-                      <span>#Back Office</span>
-                      <span>#BPO Jobs</span>
-                      <span>#ITES</span>
-                      <span>#Finance</span>
-                      <span>#Accounts</span>
-                      <span>#Medical</span>
-                      <span>#Pharma</span>
-                      <span>#Manager</span>
-                      <span>#Developer</span>
-                      <span>#Marketing</span>
-                      <span>#Engineering</span>
-                      <span>#Non Government Jobs</span>
-                    </div>
-                  </div>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <button
+                class="bg-white text-black font-bold px-4 py-2 rounded shadow"
+              >
+                View Jobs
+              </button>
+              <button
+                class="bg-yellow-400 text-black font-bold px-4 py-2 rounded shadow hover:text-white"
+              >
+                Register For FREE
+              </button>
             </div>
-        </section>
-        <!-- Featured Jobs Section -->
-        <section class="px-10">
-            <h2 class="font-bold text-center text-3xl text-[#001E86] my-2">Featured Jobs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 bg-white">
-                <!-- Job Card -->
-                <div class="border rounded shadow p-4 relative">
-                  <span class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl">In Office job</span>
-                  <h2 class="text-blue-800 font-semibold">Frontend Developer</h2>
-                  <p class="text-sm text-gray-700">Nestem Technologies </p>
-                  <p class="text-sm text-gray-600 mt-1 flex"><span><img src="https://img.icons8.com/?size=100&id=423&format=png&color=000000" alt="" class="w-4"></span>&nbsp; Full Time - Permanent</p>
-                  <p class="text-sm text-gray-600 flex"><span><img src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000" alt="" class="w-4"></span>&nbsp; 0 - 1 Years</p>
-                  <p class="text-sm text-gray-600 flex"><span><img src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000" alt="" class="w-4"></span>&nbsp;Chennai / Madras / India</p>
-                  <button class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded">
-                    Apply
-                  </button>
-                </div>
-                            
-                <div class="border rounded shadow p-4 relative">
-                  <span class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl">In Office job</span>
-                  <h2 class="text-blue-800 font-semibold">Full Stack Developer</h2>
-                  <p class="text-sm text-gray-700">Shivaami</p>
-                  <p class="text-sm text-gray-600 mt-1 flex"><span><img src="https://img.icons8.com/?size=100&id=423&format=png&color=000000" alt="" class="w-4"></span>&nbsp; Full Time - Permanent</p>
-                  <p class="text-sm text-gray-600 flex"><span><img src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000" alt="" class="w-4"></span>&nbsp; 0 - 7 Years</p>
-                  <p class="text-sm text-gray-600 flex"><span><img src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000" alt="" class="w-4"></span>&nbsp; Mumbai / India</p>
-                  <button class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded">
-                    Apply
-                  </button>
-                </div>
-              
-                <div class="border rounded shadow p-4 relative">
-                  <span class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl">In Office job</span>
-                  <h2 class="text-blue-800 font-semibold">Student Counsellor</h2>
-                  <p class="text-sm text-gray-700">Futura Labs</p>
-                  <p class="text-sm text-gray-600 mt-1 flex"><span><img src="https://img.icons8.com/?size=100&id=423&format=png&color=000000" alt="" class="w-4"></span>&nbsp; Full Time - Permanent</p>
-                  <p class="text-sm text-gray-600 flex"><span><img src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000" alt="" class="w-4"></span>&nbsp; 2 - 5 Years</p>
-                  <p class="text-sm text-gray-600 flex"><span><img src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000" alt="" class="w-4"></span>&nbsp; Kozhikode / India</p>
-                  <button class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded">
-                    Apply
-                  </button>
-                </div>
-              
-                <div class="border rounded shadow p-4 relative">
-                  <span class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl">In Office job</span>
-                  <h2 class="text-blue-800 font-semibold">Data Science Intern</h2>
-                  <p class="text-sm text-gray-700">Flynava Technologies</p>
-                  <p class="text-sm text-gray-600 mt-1 flex"><span><img src="https://img.icons8.com/?size=100&id=423&format=png&color=000000" alt="" class="w-4"></span>&nbsp; Full Time - Permanent</p>
-                  <p class="text-sm text-gray-600 flex"> <span><img src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000" alt="" class="w-4"></span>&nbsp;0 - 5 Years</p>
-                  <p class="text-sm text-gray-600 flex"><span><img src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000" alt="" class="w-4"></span>&nbsp;Bangalore / India</p>
-                  <button class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded">
-                    Apply
-                  </button>
-                </div>
+          </div>
+          <div class="bg-[#7AD5D5] rounded-lg p-4 flex-1">
+            <h2
+              class="text-xl font-bold text-[#001155] mb-2 flex items-center justify-center gap-1"
+            >
+              Quick Job Search
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-blue-900"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </h2>
+            <div
+              class="flex flex-wrap gap-2 text-sm text-[#0073AE] font-medium"
+            >
+              <span>#Fresher</span>
+              <span>#Work From Home</span>
+              <span>#WFH</span>
+              <span>#IT</span>
+              <span>#HR</span>
+              <span>#Back Office</span>
+              <span>#BPO Jobs</span>
+              <span>#ITES</span>
+              <span>#Finance</span>
+              <span>#Accounts</span>
+              <span>#Medical</span>
+              <span>#Pharma</span>
+              <span>#Manager</span>
+              <span>#Developer</span>
+              <span>#Marketing</span>
+              <span>#Engineering</span>
+              <span>#Non Government Jobs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Jobs Section -->
+      <section class="px-10">
+        <h2 class="font-bold text-center text-3xl text-[#001E86] my-2">
+          Featured Jobs
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 bg-white"
+        >
+          <!-- Job Card -->
+          <div class="border rounded shadow p-4 relative">
+            <span
+              class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl"
+              >In Office job</span
+            >
+            <h2 class="text-blue-800 font-semibold">Frontend Developer</h2>
+            <p class="text-sm text-gray-700">Nestem Technologies</p>
+            <p class="text-sm text-gray-600 mt-1 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=423&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; Full Time - Permanent
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; 0 - 1 Years
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp;Chennai / Madras / India
+            </p>
+            <button
+              class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded"
+            >
+              Apply
+            </button>
+          </div>
+
+          <div class="border rounded shadow p-4 relative">
+            <span
+              class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl"
+              >In Office job</span
+            >
+            <h2 class="text-blue-800 font-semibold">Full Stack Developer</h2>
+            <p class="text-sm text-gray-700">Shivaami</p>
+            <p class="text-sm text-gray-600 mt-1 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=423&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; Full Time - Permanent
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; 0 - 7 Years
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; Mumbai / India
+            </p>
+            <button
+              class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded"
+            >
+              Apply
+            </button>
+          </div>
+
+          <div class="border rounded shadow p-4 relative">
+            <span
+              class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl"
+              >In Office job</span
+            >
+            <h2 class="text-blue-800 font-semibold">Student Counsellor</h2>
+            <p class="text-sm text-gray-700">Futura Labs</p>
+            <p class="text-sm text-gray-600 mt-1 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=423&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; Full Time - Permanent
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; 2 - 5 Years
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; Kozhikode / India
+            </p>
+            <button
+              class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded"
+            >
+              Apply
+            </button>
+          </div>
+
+          <div class="border rounded shadow p-4 relative">
+            <span
+              class="absolute top-0 right-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-bl"
+              >In Office job</span
+            >
+            <h2 class="text-blue-800 font-semibold">Data Science Intern</h2>
+            <p class="text-sm text-gray-700">Flynava Technologies</p>
+            <p class="text-sm text-gray-600 mt-1 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=423&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp; Full Time - Permanent
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=OuyPuUC8DZXQ&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp;0 - 5 Years
+            </p>
+            <p class="text-sm text-gray-600 flex">
+              <span
+                ><img
+                  src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000"
+                  alt=""
+                  class="w-4" /></span
+              >&nbsp;Bangalore / India
+            </p>
+            <button
+              class="mt-3 w-full bg-[#00B7B7] hover:bg-cyan-600 text-white font-semibold py-1 rounded"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Employers Section -->
+      <section class="mx-14 md:mx-12 lg:mx-24">
+        <h2 class="font-bold text-center text-3xl mt-2 mb-4">
+          Featured <span class="text-[#001E86]">Employers</span>
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/1.png" alt="" />
+          </div>
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/2.png" alt="" />
+          </div>
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/3.png" alt="" />
+          </div>
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/4.png" alt="" />
+          </div>
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/5.png" alt="" />
+          </div>
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/6.png" alt="" />
+          </div>
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/7.png" alt="" />
+          </div>
+          <div
+            class="border border-gray-400 px-4 flex items-center rounded-lg py-2"
+          >
+            <img src="/images/8.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Mobile App Section -->
+      <section
+        class="flex flex-row md:flex mt-5 md:mt-16 justify-between items-center mx-14 md:mx-36"
+      >
+        <div class="space-y-2 pl-0 md:pl-10">
+          <h2 class="font-semibold text-xl md:text-3xl uppercase">
+            Apply to JOBS On-The-Go
+          </h2>
+          <h4 class="text-xl text-blue-800">Jobringer Mobile App</h4>
+          <div class="flex py-4 md:py-5">
+            <img src="/images/anroid.png" alt="" /><img
+              src="/images/ios.png"
+              alt=""
+            />
+          </div>
+          <h3 class="font-semibold text-3xl">
+            Mobile App <span class="text-[#0000FF]">Download</span>
+          </h3>
+        </div>
+        <div class="h-100vh hidden md:flex">
+          <img src="/images/15.jpg" alt="" class="h-96" />
+        </div>
+      </section>
+      <!-- Job Placement Section -->
+      <section class="bg-[#E8F5F5]">
+        <div class="px-10 py-5 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Jobs in India -->
+          <div class="pr-0 md:pr-5">
+            <h2 class="text-xl md:text-2xl text-center font-bold mb-4">
+              JOBS IN INDIA
+            </h2>
+            <div class="flex flex-wrap gap-2 md:gap-4 text-blue-900">
+              <span class="hover:underline cursor-pointer">#Mumbai</span>
+              <span class="hover:underline cursor-pointer">#Delhi</span>
+              <span class="hover:underline cursor-pointer">#Ajmer</span>
+              <span class="hover:underline cursor-pointer">#Pune</span>
+              <span class="hover:underline cursor-pointer">#Hyderabad</span>
+              <span class="hover:underline cursor-pointer">#Agra</span>
+              <span class="hover:underline cursor-pointer">#Chennai</span>
+              <span class="hover:underline cursor-pointer">#Kolkata</span>
+              <span class="hover:underline cursor-pointer">#Indore</span>
+              <span class="hover:underline cursor-pointer">#Gurugram</span>
+              <span class="hover:underline cursor-pointer">#Jaipur</span>
+              <span class="hover:underline cursor-pointer">#Ahmedabad</span>
+            </div>
+          </div>
+          <!-- International Jobs -->
+          <div class="pl-0 md:pl-5">
+            <h2 class="text-xl md:text-2xl text-center font-bold mb-4">
+              INTERNATIONAL JOBS
+            </h2>
+            <div class="flex flex-wrap gap-2 md:gap-4 text-blue-900">
+              <span class="hover:underline cursor-pointer">#Africa</span>
+              <span class="hover:underline cursor-pointer">#USA</span>
+              <span class="hover:underline cursor-pointer">#UK</span>
+              <span class="hover:underline cursor-pointer">#Australia</span>
+              <span class="hover:underline cursor-pointer">#Canada</span>
+              <span class="hover:underline cursor-pointer">#Singapore</span>
+              <span class="hover:underline cursor-pointer">#Dubai</span>
+              <span class="hover:underline cursor-pointer">#Saudi Arabia</span>
+              <span class="hover:underline cursor-pointer">#New Zealand</span>
+            </div>
+          </div>
+        </div>
+        <p class="border border-blue-800"></p>
+        <div class="grid grid-cols-4 mt-5 pb-5 justify-around mx-0 md:mx-20">
+          <div class="text-center">
+            <p class="font-semibold text-sm md:text-base pb-1">Jobs Posted</p>
+            <h3
+              class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]"
+            >
+              40808
+            </h3>
+          </div>
+          <div class="text-center">
+            <p class="font-semibold text-sm md:text-base pb-1">Jobs Filled</p>
+            <h3
+              class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]"
+            >
+              15153
+            </h3>
+          </div>
+          <div class="text-center">
+            <p class="font-semibold text-sm md:text-base pb-1">Employers</p>
+            <h3
+              class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]"
+            >
+              25776
+            </h3>
+          </div>
+          <div class="text-center">
+            <p class="font-semibold text-sm md:text-base pb-1">Active Users</p>
+            <h3
+              class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]"
+            >
+              1554182
+            </h3>
+          </div>
+        </div>
+        <p class="border border-blue-800"></p>
+      </section>
+      <!-- Disclaimer Section -->
+      <section>
+        <div class="bg-blue-50 text-sm text-black py-6 px-4 md:px-28">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-6"
+          >
+            <div class="md:w-10/12">
+              <p>
+                <span class="font-bold">Disclaimer:</span> All Trademarks and
+                Logos are the property of their respective owners, depicted here
+                purely for representation purpose. Jobringer.com has taken all
+                reasonable steps to ensure that information on this site is
+                genuine. Job Applicants are advised to evaluate independently.
+                Jobringer.com shall not have any responsibility in this regard.
+                All Jobseeker services are strictly designed & meant only for
+                job search assistance and to maximize the chances for the
+                jobseekers to get their dream job. All Job Seeker Credentials
+                and Employment Opportunities are subject to individual merit &
+                evaluation. We do not guarantee any job to any jobseeker.
+              </p>
+            </div>
+            <!-- Recognition + Social -->
+            <div class="md:w-2/12 gap-2">
+              <div class="text-center md:text-start">
+                <p class="text-sm text-gray-700">Recognized By</p>
+                <p class="text-orange-500 font-semibold text-2xl">
+                  #startupindia
+                </p>
               </div>
-              
-        </section>
-         <!-- Featured Employers Section -->
-        <section class="mx-14 md:mx-12 lg:mx-24">
-            <h2 class="font-bold text-center text-3xl mt-2 mb-4">Featured <span class="text-[#001E86]">Employers</span></h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/1.png" alt=""></div>
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/2.png" alt=""></div>
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/3.png" alt=""></div>
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/4.png" alt=""></div>
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/5.png" alt=""></div>
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/6.png" alt=""></div>
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/7.png" alt=""></div>
-                <div class="border border-gray-400 px-4 flex items-center rounded-lg py-2"><img src="/images/8.png" alt=""></div>
-               
             </div>
-        </section>
-        <!-- Mobile App Section -->
-         <section class="flex flex-row md:flex mt-5 md:mt-16 justify-between items-center mx-14 md:mx-36 ">
-            <div class="space-y-2 pl-0 md:pl-10">
-                <h2 class="font-semibold text-xl md:text-3xl uppercase">Apply to JOBS On-The-Go
-                </h2>
-                <h4 class="text-xl text-blue-800">Jobringer Mobile App</h4>
-                <div class="flex py-4 md:py-5">
-                    <img src="/images/anroid.png" alt=""><img src="/images/ios.png" alt="">
-                </div>
-                <h3 class="font-semibold text-3xl">Mobile App <span class="text-[#0000FF]">Download</span></h3>
+          </div>
+          <!-- Social Icons -->
+          <div class="flex items-center justify-end gap-1 md:gap-3 mt-3">
+            <span class="text-black font-medium">Follow us on</span>
+            <div class="bg-gray-700 p-2 rounded-full hover:bg-yellow-600">
+              <img
+                src="https://img.icons8.com/?size=100&id=118468&format=png&color=FFFFFF"
+                alt=""
+                class="w-6 text-white"
+              />
             </div>
-            <div class="h-100vh hidden md:flex ">
-                <img src="/images/15.jpg" alt="" class="h-96 ">
-               
+            <div class="bg-gray-700 p-2 rounded-full hover:bg-yellow-500">
+              <img
+                src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF"
+                alt=""
+                class="w-6 text-white"
+              />
             </div>
-         </section>
-         <!-- Job Placement Section -->
-          <section class="bg-[#E8F5F5]">
-              <div class="px-10 py-5  grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Jobs in India -->
-                <div class="pr-0 md:pr-5">
-                  <h2 class="text-xl md:text-2xl text-center font-bold mb-4">JOBS IN INDIA</h2>
-                  <div class="flex flex-wrap gap-2 md:gap-4 text-blue-900">
-                    <span class="hover:underline cursor-pointer">#Mumbai</span>
-                    <span class="hover:underline cursor-pointer">#Delhi</span>
-                    <span class="hover:underline cursor-pointer">#Ajmer</span>
-                    <span class="hover:underline cursor-pointer">#Pune</span>
-                    <span class="hover:underline cursor-pointer">#Hyderabad</span>
-                    <span class="hover:underline cursor-pointer">#Agra</span>
-                    <span class="hover:underline cursor-pointer">#Chennai</span>
-                    <span class="hover:underline cursor-pointer">#Kolkata</span>
-                    <span class="hover:underline cursor-pointer">#Indore</span>
-                    <span class="hover:underline cursor-pointer">#Gurugram</span>
-                    <span class="hover:underline cursor-pointer">#Jaipur</span>
-                    <span class="hover:underline cursor-pointer">#Ahmedabad</span>
-                  </div>
-                </div>
-                <!-- International Jobs -->
-                <div class="pl-0 md:pl-5">
-                  <h2 class="text-xl md:text-2xl text-center font-bold mb-4">INTERNATIONAL JOBS</h2>
-                  <div class="flex flex-wrap gap-2 md:gap-4 text-blue-900">
-                    <span class="hover:underline cursor-pointer">#Africa</span>
-                    <span class="hover:underline cursor-pointer">#USA</span>
-                    <span class="hover:underline cursor-pointer">#UK</span>
-                    <span class="hover:underline cursor-pointer">#Australia</span>
-                    <span class="hover:underline cursor-pointer">#Canada</span>
-                    <span class="hover:underline cursor-pointer">#Singapore</span>
-                    <span class="hover:underline cursor-pointer">#Dubai</span>
-                    <span class="hover:underline cursor-pointer">#Saudi Arabia</span>
-                    <span class="hover:underline cursor-pointer">#New Zealand</span>
-                  </div>
-                </div>
-              </div>    
-              <p class="border border-blue-800"></p>
-              <div class="grid grid-cols-4 mt-5 pb-5 justify-around mx-0 md:mx-20">
-                <div class="text-center">
-                  <p class="font-semibold text-sm md:text-base  pb-1">Jobs Posted</p>
-                  <h3 class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]">40808</h3>
-                </div>
-                <div class="text-center">
-                  <p class="font-semibold text-sm md:text-base pb-1">Jobs Filled</p>
-                  <h3 class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]">15153</h3>
-                </div>
-                <div class="text-center">
-                  <p class="font-semibold text-sm md:text-base pb-1">Employers</p>
-                  <h3 class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]">25776
-                  </h3>
-                </div>
-                <div class="text-center">
-                  <p class="font-semibold text-sm md:text-base pb-1">Active Users
-                  </p>
-                  <h3 class="font-semibold md:font-bold text-lg md:text-4xl text-[#0023B5]">1554182</h3>
-                </div>
-              </div> 
-              <p class="border border-blue-800"></p>       
-          </section>
+            <div class="bg-gray-700 p-2 rounded-full hover:bg-yellow-500">
+              <img
+                src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=FFFFFF"
+                alt=""
+                class="w-6 text-white"
+              />
+            </div>
+            <div class="bg-gray-700 p-2 rounded-full hover:bg-yellow-500">
+              <img
+                src="https://img.icons8.com/?size=100&id=dz63urxyxSdO&format=png&color=FFFFFF"
+                alt=""
+                class="w-6 text-white"
+              />
+            </div>
+            <div class="bg-gray-700 p-2 rounded-full hover:bg-yellow-500">
+              <img
+                src="https://img.icons8.com/?size=100&id=447&format=png&color=FFFFFF"
+                alt=""
+                class="w-6 text-white"
+              />
+            </div>
+            <div class="bg-gray-700 p-2 rounded-full hover:bg-yellow-500">
+              <img
+                src="https://img.icons8.com/?size=100&id=9R1sV3QvY18K&format=png&color=FFFFFF"
+                alt=""
+                class="w-6 text-white"
+              />
+            </div>
+            <div class="bg-gray-700 p-2 rounded-full hover:bg-yellow-500">
+              <img
+                src="https://img.icons8.com/?size=100&id=37325&format=png&color=FFFFFF"
+                alt=""
+                class="w-6 text-white"
+              />
+            </div>
+          </div>
+        </div>
+        <p class="border border-gray-700"></p>
+      </section>
     </main>
     <footer></footer>
   </body>
